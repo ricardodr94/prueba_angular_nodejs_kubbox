@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-responsive table-bordered table-hover text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Cedula</th>
+                        <th scope="col">Punto Venta</th>
+                        <th scope="col">Ciudad </th>
+                        <th scope="col">Porcentaje</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let results of usuariosPtventa">
+                        <th scope="row">{{ results.nombre_usuario }}</th>
+                        <td>{{ results.cedula_usuario }}</td>
+                        <td>{{ results.nombre_pventa }}</td>
+                        <td>{{ results.ciudad_pventa }}</td>
+                        <td>{{ results.porcentaje }}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

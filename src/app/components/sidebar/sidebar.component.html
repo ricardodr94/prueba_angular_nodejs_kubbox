@@ -1,0 +1,46 @@
+<div class="container ">
+    <div class="row">
+        <div class="col-12">
+            <div class="container-logo">
+                <img class="logo" src="assets/img/logo-prueba.png" alt="logo">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <!-- The sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li><a class="active" href="#home" (click)="ocultarContenido=!ocultarContenido"> ANA LUCIA HERNANDEZ <i class=" icon-right fa fa-caret-down"></i></a>
+                        <ul class="submenu" *ngIf="ocultarContenido">
+                            <li>Contenido 1</li>
+                            <li>Contenido 1</li>
+                            <li>Contenido 1</li>
+                        </ul>
+                    </li>
+                    <li><a href="#services" (click)="ocultarTablero=!ocultarTablero"><i class="fas fa-clipboard-list"></i> TABLERO <i class="icon-right fas fa-angle-down"></i></a>
+                        <ul class="submenu" *ngIf="ocultarTablero">
+                            <li>Contenido 1</li>
+                            <li>Contenido 1</li>
+                            <li>Contenido 1</li>
+                        </ul>
+                    </li>
+                    <li><a href="#clients" (click)="ocultarCatalago=!ocultarCatalago"><i class="fas fa-book-open"></i> CATALOGO DE PREMIOS<i class="icon-right fas fa-angle-down"></i></a>
+                        <ul class="submenu" *ngIf="ocultarCatalago">
+                            <li>Contenido 1</li>
+                            <li>Contenido 1</li>
+                            <li>Contenido 1</li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" (click)="ocultarPtventa = !ocultarPtventa!"><i class="fas fa-store-alt"></i> PUNTOS DE VENTA<i class="icon-right fas fa-angle-down"></i></a>
+                        <ul class="submenu" *ngIf="ocultarPtventa">
+                            <li>Crear punto de venta</li>
+                            <li>Ver puntos de venta</li>
+                            <li>Puntaje extra</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
